@@ -30,7 +30,8 @@ public class Basic {
         System.out.println();
 
         // max heap
-        PriorityQueue<Integer> rpq = new PriorityQueue<>(Collections.reverseOrder());
+//        PriorityQueue<Integer> rpq = new PriorityQueue<>(Collections.reverseOrder());
+        PriorityQueue<Integer> rpq = new PriorityQueue<>((a,b) -> b-a);
         rpq.add(2);
         System.out.println(rpq+", Peek element "+rpq.peek());
         rpq.add(10);
